@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[alt="some image"][title="image2"] {
+            border: 3px solid red;
+        }
+
+        img[alt ^=im] {
+            border: 2px solid blue;
+        }
+        img[alt *=some] {
+            border: 2px solid purple;
+        }
+        input[type="text"]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="delhi.jpg" width="300px" height="400px" alt="image">
+    <img src="delhi.jpg" width="300px" height="400px" alt="some image" title="image2">
+    <img src="delhi.jpg" width="300px" height="400px" alt="image" title="image3">
+
+    <form>
+        <input type="text">
+        <input type="text">
+        <input type="submit">
+    </form>
+</body>
+
+</html>+

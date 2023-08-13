@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* select all siblings */
+        div ~p{
+            background-color: yellow;
+            
+        }
+        /* select all siblings */
+        aside ~p{
+            background-color: aqua;
+        }
+        /* select only first siblings */
+        aside +p{
+            background-color: pink;
+        }
+        /* select direct child only */
+        aside >p{
+            background-color: brown;
+            
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div>
+            This is My Divi
+            <p> this is My paragraph 1 (direct child)</p>
+            <p> this is My paragraph 2 (direct child)</p>
+            <aside>
+                  This is My Child Aside of DIV
+                  <p> this is My paragraph 3 (Grand child)</p>
+                <p> this is My aragraph 4 (grand child)</p>
+            </aside>
+            <p> this is My paragraph 5 (direct child)</p>
+            <p> this is My paragraph 6 (direct child)</p>
+        </div>
+        <p> this is My paragraph 7 (Siblings of Div)</p>
+        <p> this is My paragraph 8 (Siblings of Div)k/p>
+    </body>
+</body>
+</html>

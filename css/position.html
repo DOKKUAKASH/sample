@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .div1{
+            position: static;
+            top: 30px;
+            left: 10px;
+        } */
+        .div1{
+            position: absolute;/* overlapping happens and poisition to the body */
+            top: 30px;
+            left: 10px;
+            width: 50%;
+        }
+        .div2{
+            position: relative;/* relative to the div */
+            top: 30px;
+            left: 50px;
+            background-color: bisque;
+        }
+  </style>
+</head>
+<body>
+  <div class="div1">
+        <h1>Positioning</h1>
+        <p>
+            This is My Static Position
+        </p>
+  </div>
+  <div class="div2">
+        <h1>Positioning</h1>
+        <p>
+            This is My Static Position
+        </p>
+  </div>
+</body>
+</html>
